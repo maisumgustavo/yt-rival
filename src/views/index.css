@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    align-items: baseline;
+}
+
+li div {
+    display: flex;
+}
+
+li div menu {
+    display: inherit;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 1%;
+}
+
+.content {
+    grid-column: 1 / 8;
+}
+
+.share {
+    grid-column: 8 / 12;
+}
+
+#video-search {
+  width: 40em;
+}

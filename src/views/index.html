@@ -1,0 +1,107 @@
+<html !DOCTYPE>
+<html lang="en">
+  <head>
+    <title>All here is Make to Watch</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <details id="contents-details">
+	<summary>Contents</summary>
+	<aside>
+	  <ul>
+	    <li>Test aside<li>
+	  </ul>
+	</aside>
+      </details>
+      <h1>Make to Watch</h1>
+      <span>
+	<input type="search" id="video-search" name="video-search">
+	<input type="submit" value="Search">
+      </span>
+      <input type="button" id="submit-video" name="submit-video" value="Send Video">
+      <details id="accounts-details">
+	<summary>User</summary>
+	<menu>
+	  <li>Username</li>
+	  <li>Theme</li>
+	  <li>Language</li>
+	  <li>Configuration</li>
+	</menu>
+      </details>
+    </header>
+    <main>
+      <div class="container">
+      <section class="content">
+	<video controls width="480">
+	  <source src="./../database/video-test.mp4"
+		  type="video/mp4">
+	</video>
+	<section>
+	  <label>{{ video-title }}</label>
+	  <nav>
+	    <img alt="Perfil Image">
+	    <label>{{ channel-name }}</label>
+	    <label>{{ subs-count }}</label>
+	    <input type="button" value="{{ Subscribe }}">
+	    <fieldset>
+	      <input type="button" value="upvote">
+	      <input type="button" value="downvote">
+	      <input type="button" value="share">
+	    </fieldset>
+	  </nav>
+	</section>
+	<section>
+	  <label>{{ views }}</label>
+	  <label>{{ post-date }}</label>
+	  <textarea>
+	    {{ video-description }}
+	  </textarea>
+	</section>
+	<section id="comments">
+	  <ol>
+	    <li>
+	      <div>
+		<img alt="profile-image">
+		<label>{{ username }}</label>
+		<label>{{ post-comment-data }}</label>
+		<article class="comment">
+		  <p>{{ comment }}</p>
+		</article>
+		<menu>
+		  <li><input type="button" value="upvote"></li>
+		  <li><input type="button" value="downvote"></li>
+		  <li><button>let me talk</button></li>
+		</menu>
+	      </div>
+	    </li>
+	    <li>
+	      <div>
+		<img alt="profile-image">
+		<label>{{ username }}</label>
+		<label>{{ post-comment-data }}</label>
+		<article class="comment">
+		  <p>{{ comment }}</p>
+		</article>
+		<menu>
+		  <li><input type="button" value="upvote"></li>
+		  <li><input type="button" value="downvote"></li>
+		  <li><button>let me talk</button></li>
+		</menu>
+	      </div>
+	    </li>
+	  </ol>
+	</section>
+      </section>
+      <section class="share">
+	<ol>
+	  <li># Lista ordenada para saber classificação dos vídeos recomendados</li>
+	  <li># Lista ordenada para saber classificação dos vídeos recomendados</li>
+	  <li># Lista ordenada para saber classificação dos vídeos recomendados</li>
+	</ol>
+      </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
